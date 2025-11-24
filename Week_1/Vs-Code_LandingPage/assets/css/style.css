@@ -21,16 +21,18 @@
     padding-right: 20px;
 }
 
-.nav-bar:hover{
+.left-navbar img:hover{
+    cursor: pointer;
+}
+.left-navbar span:hover{
     cursor: pointer;
 }
 
 .left-navbar{
     display: flex;
-    justify-content:space-between;
+    justify-content:flex-start;
 }
 .left-navbar img{
-    padding-top: 5px;
     width: 20px;
     height: 25px;
 }
@@ -40,6 +42,7 @@
     font-weight: 600;
     letter-spacing: -0.2px;
     line-height: 20px;
+    padding-left: 10px;
 }
 
 
@@ -66,8 +69,16 @@
     color: #c3d0e5;
     size: 2px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
+.right-navbar img{
+    padding-right: 20px;
+}
+
+.right-navbar img:hover{
+    cursor: pointer;
+}
+
 
 .btn a{
     text-decoration: none;
