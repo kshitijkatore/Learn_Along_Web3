@@ -1,1 +1,2 @@
 Hey, Learning Asyncronous javascript.
+Hey, Reading file using promisified version.
