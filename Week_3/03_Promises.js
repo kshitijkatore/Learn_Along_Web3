@@ -24,20 +24,37 @@ setTimeoutPromisified(3000).then(callback); //syntactically cleaner
 
 // Create the prmisifide version of fs.readFile, fs.wirteFile, cleanfile
 
+// const fs = require("fs");
+// function readTheFile(sendTheFinalValueHere){
+//     fs.readFile("a.txt","utf-8", function(err,data){
+//         sendTheFinalValueHere(data);
+//     })
+// }
+
+// function readFile(fileName){
+//     return new Promise(readTheFile);
+// }
+
+// const p = readFile();
+
+// function callback(contents){
+//     console.log(contents);
+// }
+// p.then(callback)
+
+
 const fs = require("fs");
-function readTheFile(sendTheFinalValueHere){
-    fs.readFile("a.txt","utf-8", function(err,data){
-        sendTheFinalValueHere(data);
+
+readFile=(fileName)=>{
+    return new Promise(readTheFile=(contents)=>{
+    fs.readFile("a.txt","utf-8",(err,contents)=>{
+        if(err){
+            console.log("File not found");
+        }else{
+            console.log(contents)
+        }
     })
+});
 }
 
-function readFile(fileName){
-    return new Promise(readTheFile);
-}
-
-const p = readFile();
-
-function callback(contents){
-    console.log(contents);
-}
-p.then(callback)
+readFile().then();
