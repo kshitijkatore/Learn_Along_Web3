@@ -1,0 +1,54 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: Geist Mono;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(255,255,255);
+    /* background-color: black; */
+}
+
+.main{
+   width: 50%;
+   height: 50%;
+   text-align: center;
+   background-color: #191919;
+   border-radius: 1.5rem;
+   border: 0.2px,solid,grey;
+}
+
+.main h1{
+    font-size: 20px;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+}
+
+
+
+.task{
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px;
+    height: 50%;
+    background-color: rgb(77, 117, 217);
+    color: black;
+}
+
+.task h4{
+    padding-right: 10px;
+}
+
+.task button{
+  background-color: rgb(175, 149, 149);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
